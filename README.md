@@ -13,6 +13,10 @@ create an "app/_env.js" file with inside:
 var env={
   production:true,
   port:80,
+  socket_server:"http://127.0.0.1",
+  auth: {
+    saltRounds:xx //random value for the hash generator
+  },
   mongo:"your mongo URL",
   mqtt_server:"your mqtt server, if you use the broker below it should be mqtt://localhost:1883",
   broker:{
